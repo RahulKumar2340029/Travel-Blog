@@ -134,7 +134,7 @@ section {
     background: linear-gradient(90deg, #ff6b6b, #f8e71c, #50b5ff, #7fba00, #ff6b6b);
     -webkit-background-clip: text;
     color: transparent;
-    animation: gradientAnimation 10s ease-in-out infinite;
+    animation: gradientAnimation 5s ease-in-out infinite;
     background-size: 300%;
     margin-bottom: 20px;
 }
@@ -683,3 +683,5 @@ header.sticky {
 .remove-btn:hover {
     background: darkred;
 }
+
+
