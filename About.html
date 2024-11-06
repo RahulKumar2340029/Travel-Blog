@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Voyage</title>
+
+    <!-- Google Font and Icons Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Inline Styling -->
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        header .logo {
+            color: violet;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        header .navbar {
+            list-style: none;
+            display: flex;
+            gap: 50px;
+        }
+
+
+        header .navbar a {
+            color: gray;
+            /* font-size: var(--p-font); */
+            font-weight: 500;
+            margin: 15px 22px;
+            transition: all .50s ease;
+            text-decoration: none;
+        }
+
+        header .navbar a:hover {
+            color: white
+        }
+
+        header .h-right a {
+            color: white;
+            margin-left: 10px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all .50s ease;
+        }
+
+        header .h-right a:hover {
+            color: violet
+        }
+
+        .about {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #ffffff;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.1em;
+            color: #666;
+            line-height: 1.6;
+            margin: 15px auto;
+            max-width: 800px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 40px;
+            background: violet;
+            color: #000;
+            font-size: 15px;
+            font-weight: 600;
+            border: 2px solid transparent;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all .50s ease;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transform: translateX(10px);
+            border: 2px solid #fff;
+            background: transparent;
+            border: 1px solid black;
+            color: var(--text-color);
+        }
+
+        footer {
+            background: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: violet;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="about.html" class="logo">Voyage</a>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="h-right">
+            <a href="#">Follow us</a>
+            <a href="https://github.com/RahulKumar2340029"><i class="ri-github-fill"></i></a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <h1>About Us</h1>
+        <p>
+            Welcome to <span style="color: rgb(143, 16, 143);">Voyage!</span>  We are a team of three passionate travelers — Rahul, Priya, and Priyanka — dedicated to
+            sharing the beauty, diversity, and adventure of incredible India.
+        </p>
+        <p>
+            At Voyage, we provide travel guides, insider tips, and inspiring stories to help you explore India's vibrant
+            landscapes, rich culture, and hidden gems.
+        </p>
+        <p>
+            Join us on this journey and let us make your next travel adventure memorable. Together, we aim to inspire
+            wanderlust and empower travelers to discover India’s unique experiences.
+        </p>
+        <a href="#" class="btn">Explore More</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Voyage Travels. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+</body>
+
+</html>

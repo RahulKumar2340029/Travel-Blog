@@ -645,11 +645,14 @@ header.sticky {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: all .50s ease;
 }
 
 .comment-form .btn:hover {
-    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(10px);
+    border: 2px solid var(--text-color);
+    background: transparent;
+    color: var(--text-color);
 }
 
 .comment {
@@ -683,5 +686,7 @@ header.sticky {
 .remove-btn:hover {
     background: darkred;
 }
+
+
 
 

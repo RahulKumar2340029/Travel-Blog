@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture - Voyage</title>
+
+    <!-- Google Font and Icons Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Inline Styling -->
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        header .logo {
+            color: violet;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        header .navbar {
+            list-style: none;
+            display: flex;
+            gap: 50px;
+        }
+
+        header .navbar a {
+            color: gray;
+            font-weight: 500;
+            margin: 15px 22px;
+            transition: all .50s ease;
+            text-decoration: none;
+        }
+
+        header .navbar a:hover {
+            color: white
+        }
+
+        header .h-right a {
+            color: white;
+            margin-left: 10px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all .50s ease;
+        }
+
+        header .h-right a:hover {
+            color: violet
+        }
+
+        .about {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #ffffff;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.1em;
+            color: #666;
+            line-height: 1.6;
+            margin: 15px auto;
+            max-width: 800px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 40px;
+            background: violet;
+            color: #000;
+            font-size: 15px;
+            font-weight: 600;
+            border: 2px solid transparent;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all .50s ease;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transform: translateX(10px);
+            border: 2px solid #fff;
+            background: transparent;
+            border: 1px solid black;
+            color: var(--text-color);
+        }
+
+        footer {
+            background: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: violet;
+            text-decoration: none;
+        }
+
+        /* Carousel Styles */
+        .carousel-wrapper {
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+            margin-top: 50px;
+        }
+
+        .carousel-container {
+            display: flex;
+            width: max-content;
+            transition: transform 1s ease-in-out;
+        }
+
+        .carousel-item {
+            min-width: 250px;
+            height: 300px;
+            margin: 0 10px;
+            background: #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        /* Animation for the carousel */
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+
+            25% {
+                transform: translateX(-25%);
+            }
+
+            50% {
+                transform: translateX(-50%);
+            }
+
+            75% {
+                transform: translateX(-75%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .carousel-container {
+            animation: slide 20s linear infinite;
+        }
+
+        .carousel-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="about.html" class="logo">Voyage</a>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="h-right">
+            <a href="#">Follow us</a>
+            <a href="https://github.com/RahulKumar2340029"><i class="ri-github-fill"></i></a>
+        </div>
+    </header>
+
+    <!-- Culture Section -->
+    <section class="about">
+        <h1>Discover India's Culture</h1>
+        <p>
+            India is a land of diverse cultures, rich traditions, and incredible stories. From ancient art forms to
+            modern-day celebrations, India's cultural heritage is as vast as its landscapes. Explore the beauty of
+            India's culture with us.
+        </p>
+        <p>
+            Join us as we take you on a journey through India's various cultural hotspots, offering a glimpse into its
+            vibrant festivals, unique architecture, art forms, and more.
+        </p>
+
+        <!-- Carousel for Destinations -->
+        <div class="carousel-wrapper">
+            <div class="carousel-container">
+                <div class="carousel-item">
+                    <img src="./assets/jaipur.jpg" alt="Jaipur">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/varanasi.jpg" alt="Varanasi">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/keralacul.jpg" alt="Kerala">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/goa.jpg" alt="Goa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/delhi.jpg" alt="Delhi">
+                </div>
+            </div>
+        </div>
+        <br>
+        <a href="#" class="btn">Explore More</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Voyage Travels. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+</body>
+
+</html>
